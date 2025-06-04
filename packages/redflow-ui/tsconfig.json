@@ -1,0 +1,9 @@
+{
+  "extends": "@redket/typescript/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {"@workspace/*": ["./src/*"]}
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "dist"]
+}
