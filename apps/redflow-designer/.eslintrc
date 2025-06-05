@@ -1,3 +1,0 @@
-{
-  "extends": ["@redket/eslint/react-internal"]
-}
