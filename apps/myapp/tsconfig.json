@@ -1,0 +1,14 @@
+{
+  "extends": "@workspace/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "public",
+    "typeRoots": ["./node_modules/@webflow"],
+    "baseUrl": "./",
+    "paths": {
+        //"react": ["node_modules/react"],
+        //"react-dom": ["node_modules/react-dom"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
+}
