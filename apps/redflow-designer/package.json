@@ -4,27 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently 'vite build --watch' 'webflow extension serve'",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "clean": "rm -rf node_modules dist"
   },
   "dependencies": {
-    "@webflow/designer-extension-typings": "^2.0.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
     "@types/react": "^19.1.6",
+    "concurrently": "^9.1.2",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.1",
-    "eslint": "^9.28.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.33.1",
+    "@webflow/designer-extension-typings": "^2.0.12",
     "vite": "^6.3.5"
   }
 }
