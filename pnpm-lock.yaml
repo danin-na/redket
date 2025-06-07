@@ -20,6 +20,9 @@ importers:
 
   apps/redflow-designer:
     dependencies:
+      '@workspace/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -95,7 +98,7 @@ importers:
         specifier: ^8.24.1
         version: 8.33.0(eslint@9.28.0(jiti@2.4.2))(typescript@5.8.3)
 
-  packages/redket-ui:
+  packages/ui:
     dependencies:
       '@radix-ui/react-slot':
         specifier: ^1.1.2
